@@ -1,0 +1,25 @@
+{
+  "name": "hubspot-poc",
+  "version": "0.0.1",
+  "description": "Hubspot development environment PoC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macap/hubspot-poc.git"
+  },
+  "author": "Maciej Caputa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/macap/hubspot-poc/issues"
+  },
+  "homepage": "https://github.com/macap/hubspot-poc#readme",
+  "devDependencies": {
+    "ftp-deploy": "^2.3.2"
+  },
+  "dependencies": {
+    "dotenv": "^7.0.0"
+  }
+}
