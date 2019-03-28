@@ -1,0 +1,23 @@
+{
+  "cloned_from_module_id" : 4319234,
+  "contains_overridable_hubl_tags" : true,
+  "content_tags" : [ ],
+  "css_assets" : [ ],
+  "editable_contexts" : [ ],
+  "external_js" : [ ],
+  "extra_classes" : "",
+  "global" : false,
+  "help_text" : "",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "js_assets" : [ ],
+  "label" : null,
+  "other_assets" : [ ],
+  "placement_rules" : [ ],
+  "purchased" : false,
+  "smart_type" : "NOT_SMART",
+  "tags" : [ ],
+  "portal_id" : 5652925,
+  "id" : 8391136359,
+  "module_id" : 7277607,
+  "is_available_for_new_content" : true
+}
