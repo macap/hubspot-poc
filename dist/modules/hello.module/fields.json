@@ -1,7 +1,7 @@
-{
+[{
 	"id" : "some-random-id-1233432432",
 	"name" : "Greeting",
 	"label" : "Greeting",
 	"type" : "text",
   "default" : "Insert greeting here"
-}
+}]
