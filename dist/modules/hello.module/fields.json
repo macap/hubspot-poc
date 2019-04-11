@@ -4,4 +4,12 @@
 	"label" : "Greeting",
 	"type" : "text",
   "default" : "Insert greeting here"
-}]
+},
+{
+	"id" : "some-random-id-1233432321dddd-232",
+	"name" : "Tekst",
+	"label" : "Tekst",
+	"type" : "text",
+  "default" : "Insert tekst here"
+}
+]
