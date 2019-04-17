@@ -1,12 +1,12 @@
 [{
-	"id" : "some-random-id-1233432432",
+	"id" : "",
 	"name" : "Greeting",
 	"label" : "Greeting",
 	"type" : "text",
   "default" : "Insert greeting here"
 },
 {
-	"id" : "some-random-id-1233432321dddd-232",
+	"id" : "",
 	"name" : "Tekst",
 	"label" : "Tekst",
 	"type" : "text",
