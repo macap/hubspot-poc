@@ -9,7 +9,7 @@ var config = {
     host: process.env.FTPHOST,
     port: 3201,
     secure: 'implicit',
-    localRoot: __dirname + "/../dist/modules/",
+    localRoot: __dirname + "/../dist/",
     remoteRoot: process.env.MODULES_DEST,
     include: ['*']
 }

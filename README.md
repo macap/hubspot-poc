@@ -14,7 +14,13 @@ See https://github.com/bradhave94/HubSpot/wiki/Custom-Modules-JSON for reference
 
 ## Setup
 
-- TBD
+### Setup development server
+
+```
+  cd dev
+  yarn
+  yarn hs-cms-server init --context
+```
 
 ## Usage
 
@@ -39,9 +45,9 @@ Empty template file should be created in Hubspot web interface first (see known 
 
 ### Inserting a module into a template
 
-```{% module "name" path="./module_dir" %```
+```{% module "module_123" path="/modules/module_dir" %}```
 
-Where *name* is module name unique in template (might as well be random), and path is path to module directory (relative to designs catalog) without `.module` extension.
+Where *module_123* is unique module identifier (should be random for each include), and path is path to module directory without `.module` extension (if your module is in `src/modules` just replace `module_dir` with your module name).
 
 ### Working with data from Hubspot (pages, posts, hubdb)
 

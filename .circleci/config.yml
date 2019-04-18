@@ -5,8 +5,19 @@ jobs:
        - image: circleci/node:latest
      steps:
        - checkout
-       - run: npm install
-       - run: node .circleci/deployModules.js
+       - run: 
+          name: "Setup custom environment variables"
+          command: |
+            echo 'export ENV="production"' >> $BASH_ENV # Redirect ENV into $BASH_ENV
+       - run: 
+          name: "Install package"
+          command: npm install
+       - run:
+          name: "Build files"
+          command: gulp build 
+       - run: 
+          name: "FTP Deploy"
+          command: node .circleci/deployModules.js
        - run: echo "WE'RE ONLINE"
 
 workflows:

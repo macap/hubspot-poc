@@ -1,6 +1,6 @@
 portalId: 123
 contextBaseDir: context
-templateBaseDir: ../dist/modules
+templateBaseDir: designs
 http:
   port: 8080
   adminPort: 8080

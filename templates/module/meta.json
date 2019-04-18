@@ -1,6 +1,4 @@
 {
-  "author": "maciek.caputa@gmail.com",
-  "name": "hello",
   "css_assets": [ ],
   "editable_contexts": [ ],
   "external_js": [ ],
@@ -15,6 +13,5 @@
     }
   ],
   "source": "",
-  "widgetLabel": "1",
-  "id": 123
+  "widgetLabel": "1"
 }
