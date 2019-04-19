@@ -14,6 +14,16 @@ See https://github.com/bradhave94/HubSpot/wiki/Custom-Modules-JSON for reference
 
 ## Setup
 
+### Setup development build environment
+
+If you don't have *Gulp CLI* installed globally install it first with `npm install --global gulp-cli`
+
+Then install required packages in project main directory:
+
+```
+  yarn
+```
+
 ### Setup development server
 
 ```
@@ -24,7 +34,10 @@ See https://github.com/bradhave94/HubSpot/wiki/Custom-Modules-JSON for reference
 
 ## Usage
 
-- TBD
+
+### Starting development build server
+
+```gulp build && gulp watch```
 
 ### Starting development server
 
@@ -41,7 +54,17 @@ Empty template file should be created in Hubspot web interface first (see known 
 
 ```{{ standard_footer_includes }}```
 
+You can use template generator:
+
+```gulp template.new --name template-name```
+
 ### Creating a module
+
+You can use module generator:
+
+```gulp module.new --name module-name```
+
+Modules use scss by default.
 
 ### Inserting a module into a template
 
@@ -55,7 +78,18 @@ Where *module_123* is unique module identifier (should be random for each includ
 
 ## Deployment
 
-- TBD
+Deployment config is in .circleci catalog. Files are build in CI environment and then uploaded to Hubspot via FTP.
+
+Required ENV variables in circleci:
+
+```
+FTPUSERNAME=
+FTPPASS=
+FTPHOST=
+MODULES_DEST=
+```
+
+where `MODULES_DEST` is destination catalog in hubspot.
 
 ## Known issues
 
