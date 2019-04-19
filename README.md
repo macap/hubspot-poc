@@ -4,6 +4,30 @@ This repository contains an example of local development workflow with custom mo
 
 ## Overview
 
+### Directory structure
+
+```
+.circleci
+  |_
+     config.yml
+     deployModules.js
+dist - 
+dev -
+  |_
+    context
+    designs
+src -
+  |_ 
+     modules
+     scss
+     templates
+     global.scss
+templates - 
+  |_
+     module
+     template.html
+```
+
 ### Development server
 
 See https://github.com/HubSpot/local-cms-server-cli/ for reference.
@@ -100,3 +124,11 @@ where `MODULES_DEST` is destination catalog in hubspot.
 ## Disclaimer
 
 - TBD
+
+## TODO
+
+- [ ] Assets for modules
+- [ ] Deploy script improvements (upload only changed files, delete old ones?)
+- [ ] Global style support
+- [ ] Global js support (?)
+- [ ] Data from hubspot readme section
