@@ -26,6 +26,8 @@ Then install required packages in project main directory:
 
 ### Setup development server
 
+Development server requires *Docker* installed and running. If you don't have docker yet, you can get it from [Docker Download page](https://www.docker.com/products/docker-desktop)
+
 ```
   cd dev
   yarn
