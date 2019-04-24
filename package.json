@@ -4,7 +4,7 @@
   "description": "Hubspot development environment PoC",
   "main": "index.js",
   "scripts": {
-    "gulp": "gulp"  
+    "gulp": "gulp"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,8 @@
     "gulp": "^4.0.0",
     "gulp-json-editor": "^2.5.1",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "gulp-string-replace": "^1.1.2"
   },
   "dependencies": {
     "dotenv": "^7.0.0"

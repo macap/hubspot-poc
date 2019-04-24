@@ -18,6 +18,7 @@ dev -
     designs
 src -
   |_ 
+     assets
      modules
      scss
      templates
@@ -98,6 +99,15 @@ Modules use scss by default.
 
 Where *module_123* is unique module identifier (should be random for each include), and path is path to module directory without `.module` extension (if your module is in `src/modules` just replace `module_dir` with your module name).
 
+### Assets
+
+Assets should be placed in `src/assets` directory, and called with `/assets` path.
+So if you want to display `image.png` placed in `src/assets` directory you should do:
+
+```<img src="/assets/image.png">```
+
+assets will be uploaded to hubfs and proper path (hubspot cdn) will be providen on build.
+
 ### Working with data from Hubspot (pages, posts, hubdb)
 
 - TBD
@@ -113,6 +123,8 @@ FTPUSERNAME=
 FTPPASS=
 FTPHOST=
 MODULES_DEST=
+ASSETS_DEST=
+PORTALID=
 ```
 
 where `MODULES_DEST` is destination catalog in hubspot.

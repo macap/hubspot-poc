@@ -16,8 +16,11 @@ jobs:
           name: "Build files"
           command: npm run gulp build 
        - run: 
-          name: "FTP Deploy"
+          name: "Deploy modules via FTP"
           command: node .circleci/deployModules.js
+       - run: 
+          name: "Deploy assets via FTP"
+          command: node .circleci/deployAssets.js
        - run: echo "WE'RE ONLINE"
 
 workflows:
