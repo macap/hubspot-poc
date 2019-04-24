@@ -9,7 +9,7 @@ var config = {
     host: process.env.FTPHOST,
     port: 3201,
     secure: 'implicit',
-    localRoot: __dirname + "/../src/assets",
+    localRoot: __dirname + "/../distAssets/",
     remoteRoot: process.env.ASSETS_DEST,
     include: ['*']
 }

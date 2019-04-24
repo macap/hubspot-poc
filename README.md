@@ -9,21 +9,23 @@ This repository contains an example of local development workflow with custom mo
 ```
 .circleci
   |_
-     config.yml
-     deployModules.js
-dist - 
-dev -
+     config.yml - CI config
+     deployModules.js - modules deploy script
+     deployAssets.js - assets deploy script
+dist - directory created at production build
+distAssets - directory created at production build
+dev - contains local-cms-server from hubspot
   |_
-    context
-    designs
+    context - site data
+    designs - modules, templates, etc. - generated automatically with gulp
 src -
   |_ 
-     assets
-     modules
-     scss
-     templates
-     global.scss
-templates - 
+     assets - assets: images, etc.
+     modules - modules
+     scss - global scss styles to import. Like variables, fonts, etc.
+     templates - page templates
+     global.scss - global styles
+templates - directory contains templates for new modules and templates. Do not change!
   |_
      module
      template.html
@@ -108,6 +110,12 @@ So if you want to display `image.png` placed in `src/assets` directory you shoul
 
 assets will be uploaded to hubfs and proper path (hubspot cdn) will be providen on build.
 
+### Global style
+
+If you want to include `global.scss` contents into template:
+
+```{{ require_css("/assets/global.css")) }}```
+
 ### Working with data from Hubspot (pages, posts, hubdb)
 
 - TBD
@@ -123,8 +131,8 @@ FTPUSERNAME=
 FTPPASS=
 FTPHOST=
 MODULES_DEST=
-ASSETS_DEST=
-PORTALID=
+ASSETS_DEST=/portals/<<portal name >>/content/files/assets/
+PORTALID=/portals/<<portal name>>/content/designs/Custom/
 ```
 
 where `MODULES_DEST` is destination catalog in hubspot.
@@ -132,6 +140,7 @@ where `MODULES_DEST` is destination catalog in hubspot.
 ## Known issues
 
 - Template must be created in Hubspot web interface before pushing it via ftp
+- Local hubl server sometimes hungs up - restart needed
 
 ## Disclaimer
 
@@ -139,8 +148,7 @@ where `MODULES_DEST` is destination catalog in hubspot.
 
 ## TODO
 
-- [ ] Assets for modules
+- [*] Assets for modules
 - [ ] Deploy script improvements (upload only changed files, delete old ones?)
 - [ ] Global style support
-- [ ] Global js support (?)
 - [ ] Data from hubspot readme section
