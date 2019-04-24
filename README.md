@@ -150,5 +150,5 @@ where `MODULES_DEST` is destination catalog in hubspot.
 
 - [*] Assets for modules
 - [ ] Deploy script improvements (upload only changed files, delete old ones?)
-- [ ] Global style support
+- [*] Global style support
 - [ ] Data from hubspot readme section
